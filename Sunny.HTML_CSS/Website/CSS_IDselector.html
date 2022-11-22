@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>CSS 語法 ID selector</title>
+
+    <style>
+        #h1 {
+            color: blue;
+        }
+
+        .class1 {
+            color: green
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- <h2>CSS 語法 ID selector</h2> -->
+    <h2 class="class1">CSS 語法 ID selector</h2>
+    <h1 id="h1">ID 物件只能套用一次, script JS 修改"會"被更動</h1>
+    <h1 id="h1">ID 物件只能套用一次, script JS 修改不會被更動</h1>
+    <SCRIPT>document.getElementById("h1").style.color = "red" </SCRIPT>
+
+    <hr>
+    <!-- 執行優先順序 inline > ID > class -->
+
+    <h1 style="color: orange" class="class1" id="h1">執行優先順序 inline > ID > class</h1>
+
+</body>
+
+</html>

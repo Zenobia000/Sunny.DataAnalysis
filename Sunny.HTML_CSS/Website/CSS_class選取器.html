@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 語法 自訂樣式表</title>
+    <style>
+        h5.st1 {
+            color: red;
+            text-decoration: line-throug;
+            font-size: larger;
+        }
+
+        h5.st2 {
+            color: blueviolet;
+            text-decoration: underline;
+            font-size: larger;
+        }
+
+        /* 個別定義class */
+        .color1 {
+            color: blue
+        }
+
+        .color2 {
+            color: pink
+        }
+
+        .size1 {
+            font-size: 26px;
+        }
+
+        .trans1 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h5>因為class指定h5.st1, 所以h2 吃不到設定</h5>
+    <h2 class="st1">CSS 語法 自訂樣式表 class selector</h2>
+    <!-- <h5>無修改</h5> -->
+    <!-- <span>apple</span> -->
+
+    <h5 class="st1">"color:rgb(115, 255, 0); font-size:50px"</h5>
+    <!-- <span style="color:rgb(115, 255, 0); font-size:50px">apple</span> -->
+
+    <h5 class="st1">"color:#800000; font-size:30pt;"</h5>
+    <!-- <span style="color:#800000; font-size:30pt;">apple</span> -->
+
+    <div>
+        <h5 class="st2">"color:rgb(0, 128, 128); font-size:60%;"</h5>
+    </div>
+    <!-- <span style="color:rgb(0, 128, 128); font-size:60%;">apple</span> -->
+    <hr>
+    <!-- class多重套用 -->
+    <h1 class="color1 size1 trans1">
+        class can multi import theme
+    </h1>
+
+    <h1 class="color2 size1">
+        class can multi import theme
+    </h1>
+
+    <h3 class="color1 color2 ">
+        h3 class="color1 color2"<br>
+        color1 and colo2 對調不會影響顏色, 因為編譯室按順序由上至下進行
+    </h3>
+
+    <h3 class="color2 color1">
+        h3 class="color2 color1"<br>
+        color1 and colo2 對調不會影響顏色, 因為編譯室按順序由上至下進行
+    </h3>
+
+
+</body>
+
+</html>

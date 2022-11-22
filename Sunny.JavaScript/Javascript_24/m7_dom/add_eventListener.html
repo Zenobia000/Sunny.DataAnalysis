@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Add Event Listener Demo</title>
+<style>
+ p { color:blue }
+</style>
+</head>
+<body>
+	<button id="show" onclick="show()">Show</button>
+	<button id="show1">Show Add Event Listener</button>
+	<p>This is first paragraph.</p>
+	<p class="test">This is second paragraph.</p>
+	<p class="test">This is third paragraph.</p>
+	<div id="demo"></div>
+	
+	<script>
+		function show() {
+			var elements = document.querySelectorAll("p");
+			var txt = "";
+			for (let i = 0; i < elements.length; i++)
+				txt += elements[i].innerHTML + "<br>";
+			document.getElementById("demo").innerHTML = txt;
+		}
+		
+		document.getElementById("show1").addEventListener("click", function() {
+			var elements = document.querySelectorAll(".test");
+			var txt = "";
+			for (let i = 0; i < elements.length; i++)
+				txt += elements[i].innerHTML + "<br>";
+			document.getElementById("demo").innerHTML = txt;
+		});
+	</script>
+</body>
+</html>

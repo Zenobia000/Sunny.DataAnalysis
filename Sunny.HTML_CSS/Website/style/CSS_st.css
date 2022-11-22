@@ -1,0 +1,28 @@
+h5.st1 {
+    color: red;
+    text-decoration: line-throug;
+    font-size: larger;
+}
+
+h5.st2 {
+    color: blueviolet;
+    text-decoration: underline;
+    font-size: larger;
+}
+
+/* 個別定義class */
+.color1 {
+    color: orangered
+}
+
+.color2 {
+    color: hotpink
+}
+
+.size1 {
+    font-size: 50px;
+}
+
+.trans1 {
+    text-decoration: underline;
+}

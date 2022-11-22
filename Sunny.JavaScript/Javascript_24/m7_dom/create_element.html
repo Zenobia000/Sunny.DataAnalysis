@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM Demo</title>
+<style>
+ p { color:blue }
+</style>
+</head>
+<body>
+	<p><b>This is a paragraph.</b></p>
+	
+	<script>
+		var h3 = document.createElement("h3");
+		h3.setAttribute("id", "hello")
+		h3.innerHTML = "Hello World!!"
+		var body = document.querySelector("body");
+		body.appendChild(h3);
+		
+		var div = document.createElement("div");
+		var text = document.createTextNode(
+			document.querySelector("#hello").innerHTML
+			+ " " + new Date().getFullYear());
+		div.appendChild(text);
+		body.appendChild(div);
+	</script>
+</body>
+</html>

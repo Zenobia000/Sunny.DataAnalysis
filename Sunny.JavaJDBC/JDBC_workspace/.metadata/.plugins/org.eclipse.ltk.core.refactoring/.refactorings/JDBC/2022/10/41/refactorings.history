@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;AutoCloseableDemo.java&apos; to &apos;com.lcpan.m02.AutoCloseableDemo.java&apos;&#x0D;&#x0A;- Original project: &apos;JDBC&apos;&#x0D;&#x0A;- Destination element: &apos;com.lcpan.m02.AutoCloseableDemo.java&apos;&#x0D;&#x0A;- Original element: &apos;com.lcpan.m02.AutoCloseableDemo.java&apos;" description="Copy compilation unit" destination="/src&lt;com.lcpan.m02{AutoCloseableDemo.java" element1="/src&lt;com.lcpan.m02{AutoCloseableDemo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1664850304589" units="1" version="1.0"/>
+</session>

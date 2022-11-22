@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .st1 {
+            width: 600px;
+            border-bottom: 1px solid green;
+            margin: 20px;
+            padding-bottom: 10px;
+        }
+
+        .sub {
+            border: 2px dotted red;
+            margin-left: 20px;
+            text-align: center;
+            width: 700px;
+
+            /* justify => 左右對其 */
+        }
+
+        .t1 {
+            width: 100px;
+            float: left;
+            text-align: right;
+            /* border: 1px solid red; */
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        fieldset {
+            width: 700px;
+            border: 2px solid green;
+            border-radius: 15px;
+            margin: 5PX;
+
+        }
+
+        legend {
+            color: blue;
+            margin-left: 300px;
+            border: 2px solid red;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <form action="#" method="get" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>AAAAA</legend>
+
+            <div class="st1">
+                <label class="t1" for="account">Guest:</label>
+                <input type="text" id="account" name="account" placeholder="Guest" size="50" autocomplete="off"
+                    autofocus><br>
+                <!-- placeholder Guest 顯示名稱 -->
+
+            </div>
+
+            <div class="st1">
+                <label class="t1">性別: </label>
+                <!-- 點字for 直接跳到 id -->
+                <label>
+                    <input type="radio" name="gender" value="male">男
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="female">女
+                </label>
+            </div>
+
+            <div class="st1">
+                <label class="t1" for="pwd">password:</label>
+                <input type="password" id="pwd" maxlength="100"><br>
+            </div>
+
+            <div class="st1">
+                <label class="t1">Blog</label>
+                <input type="url" name="hp" list="hpurls">
+                <datalist id="hpurls">
+                    <option value="https://www.pchome.com.tw">pchome</option>
+                    <option value="https://www.google.com">google</option>
+                    <option value="https://www.facebook.com"></option>
+                </datalist>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>BBBBB</legend>
+            <div class="st1">
+                <label class="t1">興趣</label>
+                <label>
+                    <input type="checkbox" name="hobby" value="movie">電影
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="music">音樂
+                </label>
+                <label>
+                    <input type="checkbox" name="hobby" value="sport">運動
+                </label>
+            </div>
+
+            <div class="st1">
+                <label for="" class="t1">居住地</label>
+                <select name="living" multiple size="5">
+                    <option value="TPE" selected>台北</option>
+                    <option value="TPH">新北</option>
+                    <option value="TYU">桃園</option>
+                    <option value="TPE">台北</option>
+                    <option value="TPH">新北</option>
+                    <option value="TYU">桃園</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>CCCCC</legend>
+            <div class="st1">
+                <label for="address" class="t1">完整地址</label>
+                <label>
+                    <input type="text" name="add" size="60" id="address">
+                </label>
+            </div>
+
+            <div class="st1">
+                <label for="" class="t1">照片</label>
+                <input type="file" name="file" multiple>
+            </div>
+
+            <div class="st1">
+                <label class="t1" for="cmt">Comment:</label>
+                <textarea id="cmd" cols="20" rows="5" name="memo" size="" readonly>2022/08/17本中心已獲「中華民國行政院人事行政總處」審查認證為『公務2022/08/17本中心已獲「中華民國行政院人事行政總處」審查認證為『公務2022/08/17本中心已獲「中華民國行政院人事行政總處」審查認證為『公務2022/08/17本中心已獲「中華民國行政院人事行政總處」審查認證為『公務
+                </textarea>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>DDDDD</legend>
+            <p>
+                <label class="t1">URL:</label>
+                <input type="url" name="url1">
+            </p>
+            <p>
+                <label class="t1">search:</label>
+                <input type="search" name="search1">
+            </p>
+            <p>
+                <label class="t1">tel:</label>
+                <input type="tel" name="tel">
+            </p>
+            <p>
+                <label class="t1">email:</label>
+                <input type="email" name="email">
+            </p>
+
+            <div>
+                <label for="idNO" class="t1">身分證</label>
+                <input type="text" id="idNO" name="idNO" maxlength="10" pattern="[a-z, A-Z]{1}[1-2,8-9]{1}\d{8}">
+            </div>
+
+        </fieldset>
+        <figure>
+            <code>
+                iframe src="https://www.ispan.com.tw/" frameborder="600" style="border:1 "width="600" height="450" allowfullscreen>&lt;/iframe>
+            </code>
+        </figure>
+
+
+        <div class="sub">
+            <input type="submit" value="送出">
+            <input type="reset" value="清除">
+        </div>
+
+
+    </form>
+</body>
+
+</html>

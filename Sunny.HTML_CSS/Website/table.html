@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        .tb1 {
+            border: 3px solid rgb(30, 125, 150);
+            border-collapse: collapse;
+            height: 300px;
+            width: 500px;
+
+        }
+
+        td,
+        th {
+            border: 2px solid red;
+            /* width: 500px */
+        }
+
+        thead {
+            background-color: greenyellow;
+            height: 60px;
+            font-size: 50px;
+
+        }
+
+        tbody {
+            background-color: brown;
+            color: black;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: yellow;
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: blue;
+        }
+
+        body tr:hover {
+            font-size: larger;
+            color: blueviolet;
+        }
+
+
+        .div {
+            border: 1px solid red;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+        }
+
+        .div2 {
+            border: 1px solid green;
+            width: 200px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <table class="tb1">
+
+        <thead>
+            <tr>
+                <th>col1</th>
+                <th>col2</th>
+                <th>col3</th>
+                <th>col4</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <div class="div1" style="width:200px; height:150px; border: 1px solid red; line-height: 150px">指定高度</div>
+
+            <hr>
+
+            <div class="div1" style="width:200px; border:1px solid green; padding-top:50px; padding-bottom:50px;">指定高度2
+            </div>
+
+            <caption>
+                <h1>table name</h1>
+            </caption>
+            <tr>
+                <td colspan="2">1</td>
+                <!-- <td>1</td> -->
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1</td>
+                <td rowspan="3">1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">1</td>
+                <td>1</td>
+                <!-- <td>1</td> -->
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <!-- <td>1</td> -->
+                <!-- <td>1</td> -->
+                <td>1</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>

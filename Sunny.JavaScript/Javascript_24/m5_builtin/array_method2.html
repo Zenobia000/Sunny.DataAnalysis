@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array Method Demo</title>
+<script>
+	var nums = [11, 22, 33, 44, 55, 66, 77, 88, 99];
+	nums.shift();
+	document.write(nums, "<br>");  	// 22,33,44,55,66,77,88,99
+	var nums1 = nums.slice(2,6);
+	document.write(nums1, "<br>"); 	// 44,55,66,77
+	nums.splice(5);
+	document.write(nums, "<br>");	// 22,33,44,55,66
+	nums.splice(2,1,100,200);
+	document.write(nums, "<br>");	// 22,33,100,200,55,66
+	
+	var count = nums1.unshift(10, 20);
+	document.write(nums1, "<br>"); 	// 10,20,44,55,66,77
+	document.write(count, "<br>"); 	// 6
+</script>
+</head>
+</html>

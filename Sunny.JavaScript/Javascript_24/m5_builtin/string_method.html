@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>String Object Demo</title>
+<script>
+	var str = "Hello world, welcome to Javascript world.";
+	document.write(str.length,"<br>");					// 41
+	document.write(str.charAt(6),"<br>");				// w
+	document.write(str.substring(6, 11),"<br>");		// world
+	document.write(str.indexOf("world"),"<br>");		// 6
+	document.write(str.indexOf("World"),"<br>"); 		// -1
+	document.write(str.lastIndexOf("world"),"<br>"); 	// 35
+	document.write(str.replace("Javascript","Java"),"<br>");
+	document.write(str.toLowerCase(),"<br>");
+	document.write(str.toUpperCase(),"<br>");
+	var tokens = str.split(" ");
+	for (let i = 0; i < tokens.length; i++) {
+		document.write(tokens[i],"<br>");
+	}
+</script>
+</head>
+</html>

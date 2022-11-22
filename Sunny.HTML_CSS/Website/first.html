@@ -1,0 +1,85 @@
+<!-- <!DOCTYPE> -> define HTML version -->
+<!DOCTYPE html>
+<!-- <html> -> root element -> start to end // lang 屬性, 提示瀏覽器辨別瀏覽文件目前使用的語言-->
+<html lang="zh-Hant-TW">
+
+<head>
+    <title>HTML Course</title>
+    <!-- style coding by CSS -->
+    <style></style>
+    <!-- script coding by JS -->
+    <script></script>
+    <!--  -->
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="Refresh" content="3;url=http://tw.yahoo.com"> -->
+</head>
+
+<body>
+    <h1>HTML intoduction of block and inline</h1>
+    <h2>傳送門</h2>
+    <a href="first.html">HTML demo</a>
+    <a href="清單元素.html">List demo</a>
+    <a href="hyperLink.html">首頁</a>
+    <a href="image.html">Image demo</a>
+    <a href="hyperLink.html#book1">bookmark</a>
+    <br><br>
+
+    <!-- <h1> & <p> display 屬性為block 占用一整行 -->
+    <!-- ; 可以用在css語法中做多項描述 -->
+    <h1 title="apple !" style="color:red; background-color: aqua; display: inline;">Hello</h1>
+    <h1>麥香紅茶 icash2.0三個一組！超台味開賣粉絲必收藏</h1>
+    <!-- ctrl + / 快速註解 -->
+    <!-- 成對標籤, title的屬性值自訂義, style屬性修改樣式, 屬性值為css語法  -->
+    <h2 style="background-color:yellowgreen">成對標籤, title的屬性值自訂義, style屬性修改樣式, 屬性值為css語法</h1>
+        <!-- 一個<p>就是一個段落 -->
+        <p>
+            約有40年歷史的超台味國民飲料「麥香」，再度與愛金卡公司聯手合作，本次加入「麥香綠茶」推出擬真版「麥香三入組icash2.0」！將眾人從小到大的回憶化身為可隨身攜帶的icash2.0，讓粉絲一口氣全部收藏！
+        </p>
+        <p>
+            【Info】
+            麥香三入組icash2.0
+            售價：750元
+            預購時間：8月31日早上11點
+            預購方式：OPEN POINT APP
+        </p>
+        <!-- 換行 and 分隔線 -->
+        <br>
+        <hr>
+        <!--  -->
+        <h3>block 元素裡面可以放 block 和 inline </h3>
+        top<div style="background-color:aqua">
+            <p>
+                Info】
+                麥香三入組icash2.0
+                售價：750元
+                預購時間：8月31日早上11點
+                預購方式：OPEN POINT APP
+            </p>
+
+            <span>div -> span</span>
+            <div>sapn -> div</div>
+            <p>span -> p</p>
+        </div>bottom
+
+        <!-- <hr> 分隔線 -->
+        <hr>
+        <!-- span 是inline 裡面不能放 block -->
+        <h3>block 元素裡面可以放 block 和 inline </h3>
+        <span style="background-color:red">
+            <p>
+                Info】
+                麥香三入組icash2.0
+                售價：750元
+                預購時間：8月31日早上11點
+                預購方式：OPEN POINT APP
+            </p>
+            <!-- p is block段落 上下有間隔; div is block, 上下沒有間隔  -->
+            top<span>span -> span</span>bottom
+            <div>sapn -> div</div>
+            <p>span -> p</p>
+            <div>span -> div</div>
+
+        </span>bo
+</body>
+
+</html>

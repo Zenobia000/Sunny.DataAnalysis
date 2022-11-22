@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <li>
+            作業一：使用亂數產生驗証碼
+        </li>
+        <li>
+            產生四個數字，可以重覆
+        </li>
+        <li>
+            產生四個數字，不可以重覆
+        </li>
+        <li>
+            產生四個由數字和大寫英文字母組成
+        </li>
+
+        <hr>
+
+    </p>
+    <script>
+        document.write("產生四個數字，可以重覆", "<br>");
+        var verifyNum = new Array();
+        for (let i = 0; i < 4; i++) {
+            verifyNum[i] = Math.floor(Math.random() * 10);
+            document.write(verifyNum[i], ",");
+        }
+
+        document.write("<br>");
+        document.write("產生四個數字，不可以重覆", "<br>");
+        var num = new Array();
+
+        // for(let i = 0; i < 4; i++){
+        //     document.write(verifyNum2[i], ",");
+        // }
+        for (var i = 0; i < 4; i++) {
+            do {
+                num[i] = Math.ceil(Math.random() * 9);
+                for (var j = 0; j < i; j++) {
+                    if (num[i] == num[j]) {
+                        break;
+                    }
+                }
+                // document.write(n, ",");
+            } while (j != i);
+            document.write(num[i], ",");
+        }
+
+        document.write("<br>");
+        document.write("產生四個由數字和大寫英文字母組成", "<br>");
+
+
+        function getRandomUppercaseChar() {
+            var r = Math.floor(Math.random() * 26);
+            return String.fromCharCode(65 + r);
+        }
+        // document.write(getRandomUppercaseChar());
+
+        var num2 = new Array(4);
+        var isSame = 0;
+
+        for (let i = 0; i < 4; i++) {
+
+            // do {
+            // even -> A-Z
+            if (Math.floor(Math.random() * 2) % 2 == 0) {
+                num[i] = Math.floor(Math.random() * 9);
+                document.write(num[i], ",");
+
+            } else {// odd -> 0-9
+                num[i] = getRandomUppercaseChar();
+                document.write(num[i], ",");
+
+            }
+            // document.write(typeof num[j]);
+
+        }
+        // for (let j = 0; j < 3; j++) {
+        //     if (typeof num[j] == typeof num[j + 1]) {
+        //         isSame = 1;
+        //     } else {
+        //         isSame = 0;
+        //         break;
+        //     }
+        // } while (isSame == 1);
+
+
+
+
+    </script>
+
+</body>
+
+</html>

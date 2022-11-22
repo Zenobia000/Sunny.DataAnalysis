@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function Demo</title>
+<script>	
+	var toCelsius = function(fahrenheit) {
+		return (5/9) * (fahrenheit-32);
+	}
+	document.write(toCelsius(120) + "<br>");
+	
+	function test(func, val) {
+		return func(val);
+	}	
+	document.write(test(toCelsius, 130));
+</script>
+</head>
+</html>

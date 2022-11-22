@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>function Demo</title>
+<script>
+	// chrome support, IE not support
+	var toCelsius1 = (fahrenheit) => {
+		return (5/9) * (fahrenheit-32);
+	}
+	document.write(toCelsius1(100) + "<br>");
+	
+	var toCelsius2 = (fahrenheit) => (5/9) * (fahrenheit-32)
+	document.write(toCelsius2(100) + "<br>");
+	
+	var toCelsius3 = fahrenheit => (5/9) * (fahrenheit-32)
+	document.write(toCelsius3(100) + "<br>");
+	
+</script>
+</head>
+</html>

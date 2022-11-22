@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array Method Demo</title>
+<script>
+	var names = ["Tom", "Mary", "John"];
+	document.write(names, "<br>");  		// Tom,Mary,John
+	
+	document.write(names.indexOf("Mary"), "<br>"); 	// 1
+	document.write(names.indexOf("Maria"), "<br>"); // -1
+	
+	names.pop();
+	document.write(names, "<br>"); 			// Tom,Mary
+	names.push("Tina");
+	document.write(names, "<br>"); 			// Tom,Mary,Tina
+	
+	document.write(names.join(), "<br>"); 	// Tom,Mary,Tina
+	document.write(names.join('#'), "<br>");// Tom#Mary#Tina
+</script>
+</head>
+</html> 

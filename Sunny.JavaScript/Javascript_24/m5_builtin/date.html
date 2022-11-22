@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Date Object Demo</title>
+<script>
+	var now = new Date();
+	var year = now.getFullYear();
+	var month = now.getMonth() + 1;
+	var date = now.getDate();
+	var day = now.getDay();
+	var hour = now.getHours();
+	var minute = now.getMinutes();
+	var second = now.getSeconds();
+
+ 	document.write("今天是 " + year + "年" + month + "月" + date + "日","<br>");
+ 	document.write("今天是星期 " + day,"<br>");
+	document.write("現在時間是 " + hour + ":" + minute + ":" + second,"<br>");
+	document.write("現在時間的毫秒數 " + now.getTime(),"<br>");
+	
+	var next5 = new Date();
+	next5.setDate(now.getDate()+5);
+	document.write(next5,"<br>");
+</script>
+</head>
+</html>

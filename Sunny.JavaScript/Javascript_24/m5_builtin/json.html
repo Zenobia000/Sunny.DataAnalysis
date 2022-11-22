@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JSON Demo</title>
+</head>
+<body>
+<script>
+	var customers = [{ "name":"Jean Tsao", "age":28, "mobile":"0939111222" },
+		            { "name":"May Wu", "age":35, "mobile":"0935123456" }];
+
+	for (let i = 0; i < customers.length; i++) {
+		document.write("name = ", customers[i].name, "<br>");
+		document.write("age = ", customers[i].age, "<br>");
+		document.write("mobile = ", customers[i].mobile, "<br>");
+	}
+	document.write("------------------------<br>");
+
+	for (let i in customers) {
+		document.write("name = ", customers[i].name, "<br>");
+		document.write("age = ", customers[i].age, "<br>");
+		document.write("mobile = ", customers[i].mobile, "<br>");
+	}
+	document.write("------------------------<br>");
+	
+	var jsonstr = '[{ "name":"Sean Lee", "age":32, "mobile":"0934191276" }, \
+        { "name":"Marty Kuo", "age":30, "mobile":"0937676154" }]';
+
+	var customers1 = JSON.parse(jsonstr);
+	for (let i in customers1) {
+		document.write("name = ", customers1[i].name, "<br>");
+		document.write("age = ", customers1[i].age, "<br>");
+		document.write("mobile = ", customers1[i].mobile, "<br>");
+	}
+</script>
+</body>
+</html>

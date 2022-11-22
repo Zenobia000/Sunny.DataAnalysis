@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM Demo</title>
+<style>
+ p { color:blue }
+</style>
+</head>
+<body>
+	<p class="test"><b>This is first paragraph.</b></p>
+	<p class="test"><i>This is second paragraph.</i></p>
+	<p id="test1">This is third paragraph.</p>
+	<div id="demo"></div>
+	
+	<script>		
+	var txt = "";
+	txt += document.getElementById("test1").innerHTML + "<br><br>";
+	
+	var nodes = document.getElementsByTagName("p");
+	for (let i = 0; i < nodes.length; i++)
+		txt += nodes[i].innerText + "<br>";
+	txt +="<br>";		
+	
+	var nodes = document.getElementsByClassName("test");
+	for (let i = 0; i < nodes.length; i++)
+		txt += nodes[i].innerHTML + "<br>";
+	document.getElementById("demo").innerHTML = txt;
+	</script>
+</body>
+</html>

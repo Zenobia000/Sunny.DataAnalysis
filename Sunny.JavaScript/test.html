@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="p"><b>this is a paragraph.</b></p>
+    <script>
+        var h3 = document.createElement("h3");
+        h3.setAttribute("id", "hello");
+        h3.innerHTML = "Hello world!!";
+
+        var body = document.querySelector("body");
+        body.appendChild(h3);
+
+        var div = document.createElement("div");
+        var text = document.createTextNode(
+            document.querySelector("#hello").innerHTML + " " + new Date().getFullYear()
+        );
+        var div = div.appendChild(text);
+        body.appendChild(div);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-hant-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List demo</title>
+    <!-- google font link -->
+    <link rel="stylesheet" href="style/list.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK&display=swap" rel="stylesheet"> -->
+
+
+    <style>
+        /* google fonts import 網頁端插入*/
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+HK&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@900&family=Noto+Serif+HK&display=swap');
+
+        /* 本地端插入 */
+        @font-face {
+            font-family: ofs;
+            src: url(fonts/JustOldFashion.ttf);
+        }
+
+        @font-face {
+            font-family: srt;
+            src: url(fonts/SCRIPTIN.ttf);
+        }
+
+        h1 {
+            font-family: ofs;
+        }
+
+        .h2 {
+            font-family: srt;
+        }
+
+        li {
+            font-family: 'Noto Serif HK', serif;
+        }
+
+        h1 {
+            font-family: 'Inconsolata', monospace;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="">HTML intoduction of List</h1>
+    <h2>傳送門</h2>
+    <a href="first.html">HTML demo</a>
+    <a href="清單元素.html">List demo</a>
+    <a href="image.html">Image demo</a>
+    <a href="hyperLink.html">首頁</a>
+
+    <h1>Unordered list (ul)</h1>
+    <h2>新聞</h2>
+    <ul style="background-color: yellow">
+        <li>焦點
+            <ol style="background-color: green; color:pink">
+                <li>成人</li>
+                <li>老人</li>
+            </ol>
+        </li>
+        <li>及時</li>
+        <li>娛樂</li>
+        <li>國際</li>
+    </ul>
+    <hr>
+    <h1>ordered list (ol)</h1>
+    <h2>大學排名</h2>
+    <!-- 快捷鍵 -> ol>li * n -->
+    <ol style="background-color: yellow">
+        <li>台<span>(ol內可以再放清單)</span>
+            <ol style="background-color: red">
+                <li>電機系</li>
+                <li>化學系</li>
+                <li>物理系</li>
+                <li>外文系</li>
+                <li>法律系</li>
+            </ol>
+        </li>
+        <li>清</li>
+        <li>交</li>
+        <li>成</li>
+    </ol>
+    <hr>
+    <h1>Definition list (dl)</h1>
+    <h2>台灣藍鵲</h2>
+    <dl>
+        <dt>學名</dt>
+        <dd>Urocissa caerulea</dd>
+
+        <dt>科學分類</dt>
+        <dd>
+            動物界 Animalia
+        </dd>
+        <dd>
+            鴉科 Corvidae
+        </dd>
+
+        <dt>別名</dt>
+        <dd>又稱<span>(dd內可以再放清單)</span>
+            <ul>
+                <li>臺灣暗藍鵲</li>
+                <li>紅嘴山鵲</li>
+                <li>長尾山娘</li>
+            </ul>
+
+        </dd>
+    </dl>
+    <hr>
+    <br>
+
+    <h1>Unordered list 清單樣式修改 (ul)</h1>
+    <h2>新聞</h2>
+    <ul class="s1 brd1">
+        <li>焦點
+            <ol>
+                <li class="s2" style=background-color:blue>成人</li>
+                <li class="s3" style=background-color:red>老人</li>
+            </ol>
+        </li>
+        <li>及時</li>
+        <li>娛樂</li>
+        <li>國際</li>
+    </ul>
+</body>
+
+</html>

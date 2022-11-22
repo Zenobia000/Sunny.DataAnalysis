@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Defined Object Demo</title>
+<script>
+	var str = "";
+	// creates a new instance of an object, and adds three properties to it
+	var person = {};
+	person.name = "Jean Tsao";
+	person.birth = "1981/5/12";
+	person.mobile = "0945666123";
+	for (let attr in person) {
+		str += person[attr] + "<br>";
+	}
+	document.write(str);
+	
+	str = "";
+	// Alternative syntax (using object literals):
+	var person = {
+		name: "Jean Tsao",
+		birth: "1981/5/12",
+		mobile: "0945666123"
+	}; 
+	for (let attr in person) {
+		str += person[attr] + "<br>";
+	}
+	document.write(str);
+</script>
+</head>
+</html>

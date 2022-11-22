@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Timer Demo</title>
+</head>
+<body>
+	停留時間：
+	<font id="num" face="impact">0</font>秒鐘
+	<button onClick="clearInterval(timerID)">停止</button><p>
+	<button onClick="startCount()">計時開始</button>
+	
+	<script>
+		function startCount() {
+			sec = 0;
+			timerID = setInterval(count, 1000);
+		}
+		
+		function count() {
+			num.innerHTML = ++sec;
+		}
+	</script>
+</body>
+</html>

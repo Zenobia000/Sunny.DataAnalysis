@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Global Function Demo</title>
+<script>
+	document.write(parseInt("10011100", 2), "<br>");	// 156
+	document.write(parseInt("B3FD", 16), "<br>");		// 46077
+	document.write(parseInt('0XB3FD'), "<br>");			// 46077
+	document.write(parseInt("3.1416"), "<br>");			// 3
+	document.write(parseInt("123a456"), "<br>");		// 123
+	document.write(parseFloat("3.1416G67"), "<br>");	// 3.1416
+	document.write(eval('1 + 2'), "<br>");				// 3
+	document.write(eval('12') + 3, "<br>");				// 15
+	document.write(eval('true'), "<br>");				// true
+	document.write(isNaN('12a34'), "<br>");				// true
+	document.write(isNaN('45'), "<br>");				// false
+</script>
+</head>
+</html> 

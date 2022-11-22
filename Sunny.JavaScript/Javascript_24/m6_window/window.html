@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Window Object Demo</title>
+</head>
+
+<body>
+<script>
+	var bgColor = prompt("你喜歡哪一種底色：\n淺藍色請按1，粉紅色請按2",1);
+	switch (bgColor) {
+		case "1": document.bgColor = "#CCFFFF"; break;
+		case "2": document.bgColor = "#FFCCFF"; break;
+		default: document.bgColor = "#FFFFCC";
+	}
+
+	if (confirm("你滿十八歲了嗎?"))
+		open('http://www.google.com/','','height=400,width=700');
+	else {
+		alert("等你成年以後再來吧!");
+		self.close();
+	}
+</script>
+</body>
+</html>

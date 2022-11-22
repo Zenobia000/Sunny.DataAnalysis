@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        function verifyID(id) {
+            id = id.trim();
+
+            if (id.length != 10) {
+                document.write("沒有十個字元", "<br>");
+
+            }
+
+            let firstChar = id.charCodeAt(0);
+            let firstchar = id.charAt(0);
+            if (!(firstChar >= 65 && firstChar <= 90)) {
+                document.write(id.charAt(0).toUpperCase() + id.substring(1, id.length), "<br>");
+            }
+
+            let secondChar = id.charCodeAt(1);
+            if (secondChar != 49 && secondChar != 50) {
+                document.write("第二個字元是不為1或2數字", "<br>");
+            }
+
+            let thirdNum = id.substring(2, id.length);
+            for (let i = 2; i < id.length; i++) {
+                if (!(id.charCodeAt(i) >= 48 && id.charCodeAt(i) <= 57)) {
+                    document.write("三個至第十個字不為數字");
+                }
+            }
+
+            let lastNum = id.charAt(id.length - 1);
+            // document.write(lastNum, "<br>");
+
+            // document.write(firstchar, "<br>");
+
+            var dict = { A: 10, b: 11, C: 12, D: 13, E: 14, F: 15, G: 16, H: 17, I: 34, j: 18, k: 19, L: 20, M: 21, N: 22, O: 35, P: 23, Q: 24, R: 25, S: 26, T: 27, U: 28, V: 29, W: 32, X: 30, y: 31, Z: 33 };
+
+            // document.write(dict[firstchar], "<br>");
+
+            let secondNum = id.substring(1, id.length);
+            let transferNum = dict[firstchar] + String(secondNum);
+            // document.write(transferNum, "<br>");
+            // document.write(typeof parseInt(transferNum));
+            // document.write(id.substring(1, id.length) * 1);
+            // document.write(typeof id.substring(1, id.length));
+            // document.write(typeof dict[firstchar]);
+
+            const lst = [1, 9, 8, 7, 6, 5, 4, 3, 2, 1];
+            var sum = 0;
+            for (let i = 0; i < transferNum.length - 1; i++) {
+                // document.write("<br>");
+                // document.write(lst[i], ",");
+                // document.write(transferNum[i], "=");
+                // document.write(transferNum[i] * lst[i], "<br>");
+                sum += transferNum[i] * lst[i];
+                // document.write(sum, "<br>");
+            }
+
+            // document.write(sum, "<br>");
+
+            var verifyNum = 10 - sum % 10;
+            if (verifyNum != lastNum) {
+                document.write("檢查碼不正確");
+            }
+        }
+
+        verifyID("N124542805");
+
+    </script>
+</body>
+
+</html>

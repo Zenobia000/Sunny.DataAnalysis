@@ -1,0 +1,30 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Select Demo</title>
+</head>
+<body>
+	name: <input type="text" id="cname" onblur="getInput()"><p>
+	選一個日期：
+	<select id="weekday" onchange="show()">
+		<option value="None">請選擇
+		<option value="Monday">星期一
+		<option value="Tuesday">星期二
+		<option value="Wednesday">星期三
+		<option value="Thursday">星期四
+		<option value="Friday">星期五
+		<option value="Saturday">星期六
+		<option value="Sunday">星期日
+	</select>
+	<script>
+		function getInput() {
+			alert(document.getElementById("cname").value);
+		}
+		function show() {
+			var weekday = document.querySelector("#weekday");
+			alert(weekday.value);
+			alert(weekday.options[weekday.selectedIndex].text);
+		}	
+	</script>
+</body>
+</html>

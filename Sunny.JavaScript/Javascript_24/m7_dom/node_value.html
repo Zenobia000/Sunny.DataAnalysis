@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM Demo</title>
+</head>
+
+<body>
+	<p>This is first paragraph.</p>
+	<p>This is second paragraph.</p>
+	<p>This is third paragraph.</p>
+	<div id="demo"></div>	
+	
+	<script>		
+		var txt = "";
+		var nodes = document.getElementsByTagName("p");
+		for (let i = 0; i < nodes.length; i++)
+			txt += nodes[i].childNodes[0].nodeValue + "<br>";
+		document.getElementById("demo").innerHTML = txt;
+	</script>
+</body>
+</html>

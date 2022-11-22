@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 語法 自訂樣式表</title>
+    <style>
+        h2 {
+            color: aquamarine;
+            text-decoration: underline;
+            font-style: oblique;
+        }
+
+        h5 {
+            color: #085808;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="font-family: 標楷體;">CSS 語法 自訂樣式表 embadding</h2>
+    <!-- <h5>無修改</h5> -->
+    <!-- <span>apple</span> -->
+
+    <h5>"color:rgb(115, 255, 0); font-size:50px"</h5>
+    <!-- <span style="color:rgb(115, 255, 0); font-size:50px">apple</span> -->
+
+    <h5>"color:#800000; font-size:30pt;"</h5>
+    <!-- <span style="color:#800000; font-size:30pt;">apple</span> -->
+
+    <div>
+        "color:rgb(0, 128, 128); font-size:60%;"
+    </div>
+    <div style="font-size: 200%">
+        "color:rgb(0, 128, 128); font-size:60%;"
+    </div>
+    <!-- <span style="color:rgb(0, 128, 128); font-size:60%;">apple</span> -->
+</body>
+
+</html>

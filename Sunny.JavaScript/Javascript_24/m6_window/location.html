@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Location Object Demo</title>
+</head>
+
+<body onload="setInterval(countDown, 1000)">
+	<div align="center">
+		Go「Google」
+		<button onclick="location.href='http://www.google.com/'">go!</button><p>
+		<a href="http://www.google.com/">Google</a><p>		
+		五秒鐘後自動帶你前往google<br>
+		<font id="num" size="7" face="impact">5</font>
+	</div>
+	
+	<script>
+		var sec = 5;		
+		function countDown() {
+			if (sec > 1) 
+				num.innerHTML = --sec;
+			else
+				location = "http://www.google.com/";
+		}
+	</script>
+</body>
+</html>

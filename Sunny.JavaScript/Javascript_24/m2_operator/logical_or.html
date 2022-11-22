@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Logical Operator Demo</title>
+<script>	
+	document.write(true || true, "<br>");		// true
+	document.write(true || false, "<br>");		// true
+	document.write(false || true, "<br>");		// true
+	document.write(false || false, "<br>");		// false
+	document.write(true || (1==1), "<br>");		// true
+	document.write(false || 'A', "<br>");		// A
+	document.write('A' || false, "<br>");		// A
+	document.write(true || 'A', "<br>");		// true
+	document.write('A' || true, "<br>");		// A
+	document.write('A' || 'B', "<br>");			// A
+</script>
+</head>
+</html> 

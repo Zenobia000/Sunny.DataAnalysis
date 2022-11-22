@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Closure function Demo</title>
+<script>
+	function multiplier(n) { // n is local variable
+		function multi(x) {
+			return x * n;
+		}
+		return multi;
+   }
+	
+	times3 = multiplier(3);
+	times5 = multiplier(5);
+	document.write(times3(4), "<br>"); 	// 12, 4*3
+	document.write(times5(6), "<br>");	// 30, 6*5
+	document.write(times3(times5(6)), "<br>");	// 90, 6*5*3
+</script>
+</head>
+</html>

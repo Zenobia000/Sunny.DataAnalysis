@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Variable Scope Demo</title>
+	<script>
+		var x = 10; // global variable
+		var x = 100;
+		function func() {
+			var y = 20; // local variable
+			z = 30;		// global variable
+			document.write(x, "<br>");
+			document.write(y, "<br>");
+			document.write(z, "<br>");
+			for (let i = 0; i < 3; i++) // block variable
+				document.write(i, ",");
+			document.write("<br>");
+			//		document.write(i, "<br>"); // error, i is not defined
+			for (i = 0; i < 10; i++) // block variable
+				document.write(i, ",");
+			document.write("<br>");
+			document.write(i, ",");
+		}
+		func();
+		document.write(x, "<br>");
+		//	document.write(y, "<br>");  // error, y is not defined
+		document.write(z, "<br>");
+	</script>
+</head>
+
+</html>

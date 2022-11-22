@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array Demo</title>
+<script>
+	var names = ["Tom", "Mary", "John"];
+	document.write(names, "<br>");
+	document.write("------------------------<br>");
+	
+	for (let i = 0; i < names.length; i++)
+		document.write("names[", i, "] = ", names[i], "<br>");
+	document.write("------------------------<br>");
+	
+	for (let i in names)
+		document.write("names[", i, "] = ", names[i], "<br>");
+	document.write("------------------------<br>");
+
+	for (let name of names)
+		document.write(name, "<br>");
+	document.write("------------------------<br>");
+
+	var names1 = ["Tom",, "Mary", "John"];
+	for (let i = 0; i < names1.length; i++)
+		document.write("names1[" + i + "] = " + names1[i] + "<br>");
+	document.write("------------------------<br>");
+
+</script>
+</head>
+</html>

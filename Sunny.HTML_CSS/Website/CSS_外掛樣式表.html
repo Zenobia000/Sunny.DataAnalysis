@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 語法 自訂樣式表</title>
+    <link rel="stylesheet" href="style/CSS_st.css">
+    <style>
+        .color3 {
+            color: blueviolet
+        }
+
+        h3 {
+            color: #090858;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-style: italic;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2 class="st1">CSS 語法 Linking selector</h2>
+
+    <h3 class="color2 color1">
+        藉由外掛CSS檔, 做外包操作
+        <br>
+        語法:
+        link rel="stylesheet" href="style/CSS_st.css"
+    </h3>
+
+    <h3 class="color3">
+        外掛樣式 優先 於style, 避免style樣式被外掛覆蓋掉
+    </h3>
+
+</body>
+
+</html>
